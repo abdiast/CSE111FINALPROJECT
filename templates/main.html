@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CVE Resources of Researchers</title>
+    <!-- Include the Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        function checkAnswer() {
+            // Get the user's answer from the form
+            var answer = document.querySelector('input[name="hacker"]:checked').value;
+
+            // Check if the user selected "Yes"
+            if (answer == 'yes') {
+                // If the user is a hacker, redirect to an error page
+                window.location.href = 'not-allowed';
+            } else {
+                // If the user is not a hacker, redirect to the product search page
+                window.location.href = 'product-search';
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="">
+      <button>Home</button>
+    </a>
+    <div class="container mt-5">
+        <h1>CVE Resources</h1>
+        <h2>Common Vulnerabilities and Exposures (CVE) is a standardized naming system for publicly known cybersecurity vulnerabilities and exposures. It is used to identify and manage vulnerabilities in software and other products. It is managed by the not-for-profit organization, the CVE Numbering Authority (CNA).</h2>
+        <h3> This site is intended for research use only. </h3>
+        <p>Are you a hacker?</p>
+        <button onclick="window.location.href='product-search'">NO</button>
+        <button onclick="window.location.href='not-allowed'">YES</button>        </form>
+    </div>
+</body>
+</html>
